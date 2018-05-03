@@ -8,6 +8,8 @@ ENV SDK_URL="https://dl.google.com/android/repository/sdk-tools-linux-3859397.zi
     ANDROID_VERSION=$ANDROID_VERSION \
     ANDROID_BUILD_TOOLS_VERSION=$ANDROID_BUILD_TOOLS_VERSION
 
+RUN echo " BUILD : $ANDROID_VERSION $ANDROID_BUILD_TOOLS_VERSION"
+	
 # Download Android SDK
 RUN mkdir "$ANDROID_HOME" .android \
     && cd "$ANDROID_HOME" \
